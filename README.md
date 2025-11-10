@@ -90,20 +90,6 @@ npm run lint
 
 (Full list available in `package.json`.)
 
-## How to contribute or customize
-
-- Add/edit projects in `src/data/projects.json` and add images to `src/assets/images/`
-- Create new UI components under `src/components/` and reuse `src/components/ui/*` patterns
-- Keep styles in `src/styles/` and use design tokens in `src/styles/design-tokens.js`
-
-## Recommended workflow
-
-1. Create a new branch for features: `git checkout -b feat/your-feature`
-2. Implement component and styles
-3. Add/update unit or visual tests (if any)
-4. Run `npm run lint` and `npm run dev` to test locally
-5. Open a Pull Request and request a review
-
 ## Troubleshooting
 
 - If dev server crashes on startup, ensure Node version is compatible with your dependencies (Node 18+ recommended).
