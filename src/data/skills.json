@@ -1,0 +1,30 @@
+{
+  "languages_frameworks": [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "TypeScript",
+    "React.js",
+    "SQL",
+    "Flutter",
+    "Python"
+  ],
+  "tools_libraries": [
+    "Tailwind CSS",
+    "React Router",
+    "Git",
+    "GitHub",
+    "VS Code"
+  ],
+  "concepts": [
+    "Responsive Design",
+    "State Management",
+    "Single Page Applications (SPA)"
+  ],
+  "soft_skills": [
+    "Team Leadership",
+    "Communication",
+    "Time Management",
+    "Problem Solving"
+  ]
+}

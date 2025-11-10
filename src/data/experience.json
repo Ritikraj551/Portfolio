@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "role": "Front-End Developer Intern",
+    "company": "SmallFare Services Pvt. Ltd.",
+    "duration": "May 2025 — Aug 2025",
+    "points": [
+      "Led frontend development efforts in a team",
+      "Collaborated with backend & design teams to implement UI functionality",
+      "Reviewed code, guided interns, improved team productivity"
+    ]
+  },
+  {
+    "id": 2,
+    "role": "Flutter App Developer (Intern)",
+    "company": "TFour Tech Pvt. Ltd.",
+    "duration": "Jan 2024 — Jul 2024",
+    "points": [
+      "Built multiple production-ready components",
+      "Worked with state management & responsive UI",
+      "Integrated API-based UI workflows"
+    ]
+  },
+  {
+    "id": 3,
+    "role": "Machine Learning Training",
+    "company": "IIT-M Pravartak / Internshala",
+    "duration": "Aug 2024 — Oct 2024",
+    "points": ["Hands-on ML projects", "Worked on small datasets with Python"]
+  }
+]

@@ -1,0 +1,195 @@
+[
+  {
+    "id": 1,
+    "title": "Apple Website",
+    "description": "A React + Vite site with 3D models and GSAP animations (product showcase).",
+    "tech": ["React", "Vite", "TailwindCSS", "Three.js", "GSAP"],
+    "github": "",
+    "demo": "",
+    "image": [
+      "/assets/images/apple_website/apple1.png",
+      "/assets/images/apple_website/apple2.png",
+      "/assets/images/apple_website/apple3.png"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Rakshak (SIH Prototype)",
+    "description": "Prototype app (SIH) with charts and animated UI, built with React and Recharts.",
+    "tech": ["React", "TailwindCSS", "Framer Motion", "Recharts"],
+    "github": "https://github.com/Ritikraj551/sihProto",
+    "demo": "",
+    "image": [
+      "/assets/images/rakshak/rakshak1.png",
+      "/assets/images/rakshak/rakshak2.png",
+      "/assets/images/rakshak/rakshak3.png",
+      "/assets/images/rakshak/rakshak4.png",
+      "/assets/images/rakshak/rakshak5.png",
+      "/assets/images/rakshak/rakshak6.png"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Currency Converter",
+    "description": "Vanilla JS currency converter UI that fetches exchange rates and displays conversions.",
+    "tech": ["HTML", "CSS", "JavaScript", "REST API"],
+    "github": "https://github.com/Ritikraj551/currency-converter",
+    "demo": "",
+    "image": [
+      "/assets/images/currency_con/currency1.png",
+      "/assets/images/currency_con/currency2.png",
+      "/assets/images/currency_con/currency3.png"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Herbarium (Triyagyoni)",
+    "description": "Plant e-commerce / catalog site with 3D model-viewer support and product pages.",
+    "tech": ["HTML", "CSS", "JavaScript", "model-viewer (3D)"],
+    "github": "",
+    "demo": "",
+    "image": [
+      "/assets/images/herbarium/herbarium1.png",
+      "/assets/images/herbarium/herbarium2.png",
+      "/assets/images/herbarium/herbarium3.png",
+      "/assets/images/herbarium/herbarium4.png",
+      "/assets/images/herbarium/herbarium5.png",
+      "/assets/images/herbarium/herbarium6.png",
+      "/assets/images/herbarium/herbarium7.png",
+      "/assets/images/herbarium/herbarium8.png",
+      "/assets/images/herbarium/herbarium9.png"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Bookmark Website",
+    "description": "A Tailwind-based bookmark manager landing site with features and download CTAs.",
+    "tech": ["HTML", "TailwindCSS", "JavaScript"],
+    "github": "https://github.com/Ritikraj551/bookMark",
+    "demo": "",
+    "image": [
+      "/assets/images/bookmark/bookmark1.png",
+      "/assets/images/bookmark/bookmark2.png",
+      "/assets/images/bookmark/bookmark3.png",
+      "/assets/images/bookmark/bookmark4.png",
+      "/assets/images/bookmark/bookmark5.png"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Clipboard",
+    "description": "A landing site describing a clipboard/snippets app (Tailwind + HTML/CSS).",
+    "tech": ["HTML", "TailwindCSS", "JavaScript"],
+    "github": "https://github.com/Ritikraj551/clipboard",
+    "demo": "",
+    "image": [
+      "/assets/images/clipboard/clipboard1.png",
+      "/assets/images/clipboard/clipboard2.png",
+      "/assets/images/clipboard/clipboard3.png",
+      "/assets/images/clipboard/clipboard4.png",
+      "/assets/images/clipboard/clipboard5.png"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "SkySync",
+    "description": "File-sync landing page with dark/light theme, features, and testimonials.",
+    "tech": ["HTML", "TailwindCSS", "JavaScript"],
+    "github": "https://github.com/Ritikraj551/skysync",
+    "demo": "",
+    "image": [
+      "/assets/images/skysync/skysync1.png",
+      "/assets/images/skysync/skysync2.png",
+      "/assets/images/skysync/skysync3.png",
+      "/assets/images/skysync/skysync4.png",
+      "/assets/images/skysync/skysync5.png",
+      "/assets/images/skysync/skysync6.png"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Testimonial Grid",
+    "description": "Responsive testimonial grid layout example built with HTML/CSS.",
+    "tech": ["HTML", "CSS"],
+    "github": "https://github.com/Ritikraj551/testimonial-grid",
+    "demo": "",
+    "image": ["/assets/images/testimonial/testimonial.png"]
+  },
+  {
+    "id": 9,
+    "title": "Trimzy",
+    "description": "Link-shortening / marketing landing page built with modern CSS and JS.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "github": "https://github.com/Ritikraj551/trimzy",
+    "demo": "",
+    "image": [
+      "/assets/images/trimzy/trimzy1.png",
+      "/assets/images/trimzy/trimzy2.png",
+      "/assets/images/trimzy/trimzy3.png",
+      "/assets/images/trimzy/trimzy4.png"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "VirtuNest",
+    "description": "Virtual/VR agency landing site showcasing creations and interactive imagery.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "github": "https://github.com/Ritikraj551/virtunest",
+    "demo": "",
+    "image": [
+      "/assets/images/virtunest/virtunest1.png",
+      "/assets/images/virtunest/virtunest2.png",
+      "/assets/images/virtunest/virtunest3.png",
+      "/assets/images/virtunest/virtunest4.png"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Password Generator",
+    "description": "React + Vite password generator app (TailwindCSS used in the project template).",
+    "tech": ["React", "Vite", "TailwindCSS"],
+    "github": "https://github.com/Ritikraj551/passwordGenerator",
+    "demo": "",
+    "image": ["/assets/images/passgen/passgen.png"]
+  },
+  {
+    "id": 12,
+    "title": "Rock Paper Scissors",
+    "description": "Classic Rock-Paper-Scissors mini-game implemented with vanilla JS.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "github": "https://github.com/Ritikraj551/rock-paper-scissor",
+    "demo": "",
+    "image": [
+      "/assets/images/rockpaper/rockpaper1.png",
+      "/assets/images/rockpaper/rockpaper2.png",
+      "/assets/images/rockpaper/rockpaper3.png",
+      "/assets/images/rockpaper/rockpaper4.png"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Tic-Tac-Toe",
+    "description": "A small browser-based Tic-Tac-Toe mini-game using plain HTML/CSS/JS.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "github": "https://github.com/Ritikraj551/Tic-Tac-Toe",
+    "demo": "",
+    "image": [
+      "/assets/images/tictactoe/tictactoe1.png",
+      "/assets/images/tictactoe/tictactoe2.png"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "To-Do List",
+    "description": "React + Vite To-Do app using TailwindCSS (simple task manager demo).",
+    "tech": ["React", "Vite", "TailwindCSS"],
+    "github": "https://github.com/Ritikraj551/to-do-list",
+    "demo": "",
+    "image": [
+      "/assets/images/todo/todo1.png",
+      "/assets/images/todo/todo2.png",
+      "/assets/images/todo/todo3.png",
+      "/assets/images/todo/todo4.png"
+    ]
+  }
+]
