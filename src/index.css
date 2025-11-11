@@ -26,7 +26,7 @@ body {
   color: var(--color-text-gray);
   font-family: var(--font-body);
   scroll-behavior: smooth;
-  cursor: url("/cursor/sanemi-sword.png") 30 8, default;
+  cursor: url("/cursor/sanemi-sword.png") 2 3, default;
 }
 
 a:hover {

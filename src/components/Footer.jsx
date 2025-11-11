@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -34,11 +34,13 @@ const Footer = () => {
           {/* Social */}
           <div className="flex gap-6">
             {[
-              { icon: <FaGithub size={22} />, link: "https://github.com/" },
-              { icon: <FaLinkedin size={22} />, link: "https://linkedin.com/" },
               {
-                icon: <FaInstagram size={22} />,
-                link: "https://instagram.com/",
+                icon: <FaGithub size={22} />,
+                link: "https://github.com/Ritikraj551",
+              },
+              {
+                icon: <FaLinkedin size={22} />,
+                link: "https://www.linkedin.com/in/ritik-raj-singh-92b018301/",
               },
             ].map((social, index) => (
               <a
