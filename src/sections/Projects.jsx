@@ -9,7 +9,7 @@ const Projects = () => {
           <span className="text-primary-light">My</span>Projects
         </h2>
         {/* Add projects grid here */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-8xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-y-12 max-w-7xl mx-auto">
           {projectsData.map((project) => (
             <ProjectCard
               className="reveal"

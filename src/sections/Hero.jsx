@@ -17,7 +17,6 @@ export default function Hero() {
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10">
         <div className="flex justify-between items-center w-full gap-20 max-w-6xl px-10">
           <div>
-            {/* ⚔️ KATANA SLASH REVEAL */}
             <motion.h1
               initial="hidden"
               animate="show"
@@ -25,7 +24,7 @@ export default function Hero() {
               onAnimationComplete={() =>
                 document.querySelector(".hero-title")?.classList.add("revealed")
               }
-              className="hero-title font-anime text-7xl font-bold drop-shadow-lg"
+              className="hero-title font-anime text-4xl md:text-7xl font-bold drop-shadow-lg"
             >
               Ritik Raj Singh
             </motion.h1>
@@ -35,9 +34,9 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.5 }}
               // className="text-gray-300 font-body text-xl mt-4 tracking-wider"
-              className="text-text-gray font-body text-lg mt-4 tracking-[0.25em]"
+              className="text-text-gray font-body md:text-lg mt-4 tracking-[0.25em]"
             >
-              Creative Developer | Motion UI | Anime Effects
+              Frontend Engineer | Interactive UI | Modern Web
             </motion.p>
           </div>
           <div>
@@ -50,7 +49,7 @@ export default function Hero() {
               <img
                 src="/heroProfile.png"
                 alt="profile"
-                className="w-[330px] slas-glow"
+                className="md:w-[330px] slas-glow"
                 style={{ transitionDelay: "0.4s" }}
               />
 

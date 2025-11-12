@@ -30,17 +30,16 @@ export default function Experience() {
       ref={sectionRef}
       className="relative py-32 w-full overflow-hidden"
     >
-      {/* ✅ Animated Wind Background */}
+      {/* Animated Wind Background */}
       <div className="experience-bg"></div>
 
-      {/* ✅ Quote */}
-      <p className="text-center text-primary-light font-body italic mb-12">
-        Every step sharpened my skills — every challenge made me stronger.
-      </p>
-
-      <h2 className="text-center text-4xl font-anime text-primary mb-16">
+      <h2 className="text-center text-4xl font-anime text-primary mb-8">
         Experience
       </h2>
+      {/* Quote */}
+      <p className="text-center mx-auto text-primary-light font-body italic mb-16 max-w-xs md:max-w-xl">
+        Every step sharpened my skills — every challenge made me stronger.
+      </p>
 
       <div className="max-w-4xl mx-auto px-6 relative timeline-line">
         {experiences.map((exp, index) => (

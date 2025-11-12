@@ -132,14 +132,6 @@ a:hover {
   }
 }
 
-.timeline-item {
-  transition: all 0.8s ease-out;
-}
-.timeline-item.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .wind-border {
   position: relative;
   overflow: visible;
@@ -208,42 +200,72 @@ a:hover {
   }
 }
 
-/* Timeline Line */
-.timeline-line::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  width: 2px;
-  height: 100%;
-  background: var(--color-primary-dark);
-  transform: translateX(-50%);
-  opacity: 0.5;
+/* Timeline*/
+/* ✅ MOBILE (below md) */
+@media (max-width: 767px) {
+  /* Default layout: stack vertically */
+  .timeline-item {
+    position: relative;
+    margin-bottom: 60px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: left !important;
+  }
+
+  /* Make dot appear on left side */
+  .timeline-item::before {
+    left: 8px; /* dot closer to edge */
+  }
+
+  /* Override left/right classes so both behave same on mobile */
+  .timeline-item.left,
+  .timeline-item.right {
+    text-align: left !important;
+  }
 }
 
-/* Timeline Dot */
-.timeline-item {
-  position: relative;
-  margin-bottom: 60px;
-}
-.timeline-item::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: calc(50% - 6px);
-  width: 14px;
-  height: 14px;
-  background: var(--color-primary);
-  border-radius: 50%;
-}
+@media (min-width: 768px) {
+  .timeline-item.left {
+    padding-right: 55%;
+    text-align: right;
+  }
+  .timeline-item.right {
+    padding-left: 55%;
+  }
 
-/* Left / Right positioning */
-.timeline-item.left {
-  padding-right: 55%;
-  text-align: right;
-}
-.timeline-item.right {
-  padding-left: 55%;
+  /* Timeline Line */
+  .timeline-line::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: var(--color-primary-dark);
+    transform: translateX(-50%);
+    opacity: 0.5;
+  }
+
+  /* Timeline Dot */
+  .timeline-item {
+    position: relative;
+    margin-bottom: 60px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+  }
+
+  /* Timeline dot stays centered */
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 6px);
+    width: 14px;
+    height: 14px;
+    background: var(--color-primary);
+    border-radius: 50%;
+  }
 }
 
 /* Card */

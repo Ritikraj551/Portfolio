@@ -27,10 +27,9 @@ export default function About() {
     <section
       id="about"
       ref={sectionRef}
-      className="min-h-screen flex items-center justify-center px-10 py-32"
+      className="min-h-screen flex items-center justify-center px-10 py-30"
     >
-      <div className="flex gap-20 justify-between items-center max-w-6xl">
-
+      <div className="flex flex-col-reverse md:flex-row gap-20 justify-between items-center max-w-6xl">
         {/* LEFT — Profile + Circle Text */}
         <div className="relative reveal" style={{ transitionDelay: "0.3s" }}>
           <div className="absolute inset-0 blur-3xl opacity-30 bg-primary rounded-full -z-10 wind-border "></div>
@@ -38,7 +37,7 @@ export default function About() {
           <img
             src="/profile.png"
             alt="profile"
-            className="w-[340px] aura-glow rounded-xl"
+            className="w-[110px] d:w-[340px] aura-glow rounded-xl"
           />
 
           <div
@@ -53,7 +52,10 @@ export default function About() {
         </div>
 
         {/* RIGHT — Text Content */}
-        <div className="w-1/2 space-y-6 reveal" style={{ transitionDelay: "0.2s" }}>
+        <div
+          className="md:w-1/2 space-y-6 reveal"
+          style={{ transitionDelay: "0.2s" }}
+        >
           <p className="text-primary-light tracking-widest uppercase text-sm font-body">
             Who am I?
           </p>

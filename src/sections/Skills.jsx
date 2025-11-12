@@ -3,13 +3,17 @@ import CardSwap, { Card } from "../components/ui/CardSwap";
 
 const Skills = () => {
   return (
-    <section id="skills" className="w-full py-20 px-20 overflow-hidden">
-      <div className="max-w-2xl text-left">
-        <h2 className="flex gap-2 justify-center items-center mb-8 text-primary font-anime font-semibold text-3xl">
+    <section
+      id="skills"
+      className="w-full py-20 px-10 md:px-20 overflow-hidden"
+    >
+      <div className="flex flex-col md:max-w-2xl text-left">
+        <h2 className="gap-2 justify-center items-center mb-8 text-primary font-anime font-semibold text-3xl">
           <span className="text-primary-light">My</span> Skills
         </h2>
 
-        <p className="font-body text-lg leading-relaxed text-primary-light">
+        {/* For desktop screens */}
+        <p className="hidden md:block font-body text-lg leading-relaxed text-primary-light">
           As a front-end developer, I specialize in creating interactive and
           visually striking web experiences that are not only fast but also
           seamless and intuitive. With a strong emphasis on clean, maintainable
@@ -18,6 +22,12 @@ const Skills = () => {
           responsive layout, optimizing performance, or crafting animations that
           bring the interface to life, I focus on every detail to create
           engaging, user-centered digital experiences that stand out.
+        </p>
+
+        {/* For mobile screens */}
+        <p className="md:hidden font-body text-lg leading-relaxed text-primary-light">
+          As a Frontend Developer, I specialize in creating clean UI, fast
+          performance, and seamless user experiences.
         </p>
       </div>
       <div className="-mt-80" style={{ height: "500px", position: "relative" }}>
