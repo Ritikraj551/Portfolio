@@ -30,7 +30,7 @@ export default function Contact() {
       {/* background wind aura */}
       <div className="experience-bg"></div>
 
-      <div className="max-w-4xl mx-auto relative z-10">
+      <div className="max-w-lg xl:max-w-3xl mx-auto relative z-10">
         <h2 className="text-center text-primary font-anime text-4xl mb-10 reveal">
           Contact Me
         </h2>
@@ -41,7 +41,7 @@ export default function Contact() {
 
         <form
           onSubmit={handleSend}
-          className="reveal floating max-w-2xl mx-auto p-10 rounded-2xl bg-surface/60 backdrop-blur-xl border wind-border shadow-glow flex flex-col gap-6"
+          className="reveal max-w-xl mx-auto p-10 rounded-2xl bg-surface/60 backdrop-blur-xl border wind-border shadow-glow flex flex-col gap-6"
         >
           <input
             type="text"

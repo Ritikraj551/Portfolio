@@ -37,7 +37,7 @@ export default function About() {
           <img
             src="/profile.png"
             alt="profile"
-            className="w-[110px] d:w-[340px] aura-glow rounded-xl"
+            className="w-[110px] md:w-[340px] aura-glow rounded-xl"
           />
 
           <div

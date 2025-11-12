@@ -187,7 +187,6 @@ a:hover {
     linear-gradient(120deg, rgba(47, 158, 107, 0.08), transparent 60%);
   filter: blur(70px);
   opacity: 0.5;
-  animation: windMove 14s linear infinite alternate;
   pointer-events: none;
 }
 

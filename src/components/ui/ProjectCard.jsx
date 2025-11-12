@@ -4,7 +4,7 @@ import Carousel from "../ui/Carousel";
 
 function ProjectCard({ title, description, tech, github, demo, image }) {
   return (
-    <div className="flex max-w-sm mx-auto wind-border rounded-2xl border border-primary-dark shadow-glow backdrop-blur-lg hover:scale-[1.03] transition duration-300 p-4">
+    <div className="flex max-w-xs md:max-w-sm mx-auto wind-border rounded-2xl border border-primary-dark shadow-glow backdrop-blur-lg hover:scale-[1.03] transition duration-300 p-4">
       <GlareHover
         glareColor="#ffffff"
         glareAngle={-30}
@@ -15,6 +15,7 @@ function ProjectCard({ title, description, tech, github, demo, image }) {
         <div className="flex flex-col justify-center items-center pb-4">
           <Carousel
             autoplay="false"
+            baseWidth="300"
             autoplayDelay={3000}
             loop="true"
             pauseOnHover="true"
