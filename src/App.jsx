@@ -33,14 +33,14 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <Hero />
-      <About />
+      {/* <Navbar /> */}
+      {/* <Hero /> */}
+      {/* <About /> */}
       <Projects />
-      <Skills />
-      <Experience />
-      <Contact />
-      <Footer />
+      {/* <Skills /> */}
+      {/* <Experience /> */}
+      {/* <Contact /> */}
+      {/* <Footer /> */}
     </>
   );
 }

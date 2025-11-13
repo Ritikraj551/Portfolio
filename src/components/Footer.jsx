@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="w-full bg-background/40 backdrop-blur-xl border-t border-white/5 mt-20 pt-10 pb-6">
       <div className="container mx-auto px-6">
         {/* Top Section */}
-        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center text-center gap-6">
+        <div className="flex flex-col lg:flex-row justify-center md:justify-between items-center text-center gap-6">
           {/* Brand */}
           <h3 className="font-anime text-primary text-2xl glow-breath tracking-widest">
             Ritik's Portfolio
