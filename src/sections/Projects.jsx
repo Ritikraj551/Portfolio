@@ -26,9 +26,9 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* Mobile view of cards
-        <div className="max-w-lg">
-          <MobileCarousel >
+        {/* Mobile view of cards */}
+        <div className="lg:hidden mx-auto max-w-lg">
+          <MobileCarousel>
             {projectsData.map((project) => (
               <ProjectCard
                 className="reveal"
@@ -43,7 +43,7 @@ const Projects = () => {
               />
             ))}
           </MobileCarousel>
-        </div> */}
+        </div>
       </div>
     </section>
   );
