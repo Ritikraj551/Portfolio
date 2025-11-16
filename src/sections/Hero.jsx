@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import React from "react";
 import DarkVeil from "../components/DarkVeil";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const slashReveal = {
   hidden: { clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)" },
@@ -24,7 +24,7 @@ export default function Hero() {
               onAnimationComplete={() =>
                 document.querySelector(".hero-title")?.classList.add("revealed")
               }
-              className="hero-title font-anime text-4xl md:text-7xl font-bold drop-shadow-lg"
+              className="hero-title font-anime text-4xl md:text-7xl font-bold drop-shadow-md drop-shadow-primary-dark"
             >
               Ritik Raj Singh
             </motion.h1>
@@ -38,30 +38,120 @@ export default function Hero() {
             >
               Frontend Engineer | Interactive UI | Modern Web
             </motion.p>
-          </div>
-          <div>
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.5 }}
-              className="relative aura-glow transition duration-100 rounded-full"
-            >
-              <img
-                src="/heroProfile.png"
-                alt="profile"
-                className="md:w-[330px] slas-glow"
-                style={{ transitionDelay: "0.4s" }}
-              />
 
-              <div
-                className="absolute bottom-[-30px] left-[-50px]"
-                style={{ transitionDelay: "0.6s" }}
-              ></div>
+            {/* ACTION BUTTONS */}
+            <motion.div
+              initial={{ opacity: 0, y: 25 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6, duration: 0.5 }}
+              className="flex gap-4 mt-6"
+            >
+              {/* Projects Button */}
+              <a
+                href="#projects"
+                className="relative p-2 md:px-6 md:py-3 rounded-xl border border-primary text-primary font-body text-md 
+                          bg-surface/40 backdrop-blur-lg overflow-hidden group 
+                          hover:scale-[1.05] transition-all duration-300"
+              >
+                <span className="relative z-10 lg:text-xl text-xs">
+                  My Projects
+                </span>
+                <span
+                  className="absolute inset-0 bg-primary/15 translate-x-[-120%] group-hover:translate-x-0 
+                                transition-transform duration-500 skew-x-[20deg]"
+                />
+              </a>
+
+              {/* CV Button */}
+              <a
+                href=""
+                target="_blank"
+                className="relative p-2 md:px-6 md:py-3 rounded-xl bg-primary text-background shadow-lg shadow-primary/50
+                          font-body text-md overflow-hidden group hover:scale-[1.05] transition-all duration-300"
+              >
+                <span className="relative z-10 lg:text-xl text-xs">
+                  Download CV
+                </span>
+                <span
+                  className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 
+                                transition-all duration-300"
+                />
+              </a>
+            </motion.div>
+
+            {/* CONNECT PANEL */}
+            <motion.div
+              initial={{ opacity: 0, y: 25 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.8, duration: 0.6 }}
+              className="flex items-center gap-4 mt-12"
+            >
+              <p className="font-body text-text-gray tracking-widest">
+                Let’s Connect
+              </p>
+
+              <div className="flex gap-3">
+                {/* GitHub Orb */}
+                <a
+                  href="https://github.com/Ritikraj551"
+                  target="_blank"
+                  className="group relative w-11 h-11 flex items-center justify-center rounded-full 
+                            border border-primary bg-surface/40 backdrop-blur-md overflow-hidden
+                            hover:scale-[1.12] transition-all duration-300"
+                >
+                  <span
+                    className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 
+                                   blur-md transition duration-300"
+                  />
+                  <FaGithub
+                    className="text-primary group-hover:scale-110 transition"
+                    size={20}
+                  />
+                </a>
+
+                {/* LinkedIn Orb */}
+                <a
+                  href="https://www.linkedin.com/in/ritik-raj-singh-92b018301/"
+                  target="_blank"
+                  className="group relative w-11 h-11 flex items-center justify-center rounded-full 
+                            border border-primary bg-surface/40 backdrop-blur-md overflow-hidden
+                            hover:scale-[1.12] transition-all duration-300"
+                >
+                  <span
+                    className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 
+                                   blur-md transition duration-300"
+                  />
+                  <FaLinkedin
+                    className="text-primary group-hover:scale-110 transition"
+                    size={20}
+                  />
+                </a>
+              </div>
             </motion.div>
           </div>
+
+          {/* === RIGHT SIDE IMAGE === */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.5 }}
+            className="relative aura-glow transition duration-100 rounded-full"
+          >
+            <img
+              src="/heroProfile.png"
+              alt="profile"
+              className="md:w-[330px] slash-glow"
+              style={{ transitionDelay: "0.4s" }}
+            />
+
+            <div
+              className="absolute bottom-[-30px] left-[-50px]"
+              style={{ transitionDelay: "0.6s" }}
+            ></div>
+          </motion.div>
         </div>
 
-        {/* Scroll hint */}
+        {/* Scroll Hint */}
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

@@ -1,7 +1,4 @@
-import React from "react";
-import GlareHover from "../ui/GlareHover";
 import Carousel from "../ui/Carousel";
-import Carouseln from "../ui/Carouseln";
 
 function ProjectCard({
   title,
@@ -19,11 +16,11 @@ function ProjectCard({
       style={style}
     >
       <div className="flex w-full flex-col justify-center items-center pb-4">
-        <Carouseln>
+        <Carousel>
           {image.map((src) => (
             <img className="mx-auto w-82 h-42" src={src} alt="" />
           ))}
-        </Carouseln>
+        </Carousel>
         <h3 className="text-primary font-anime text-lg md:text-2xl m-2">
           {title}
         </h3>

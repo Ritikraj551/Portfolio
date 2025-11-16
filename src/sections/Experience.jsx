@@ -54,9 +54,7 @@ export default function Experience() {
                 {exp.role}
               </h3>
 
-              <p className="text-[var(--color-text-gray)] font-body">
-                {exp.company}
-              </p>
+              <p className="text-text-gray font-body">{exp.company}</p>
               <p className="text-sm opacity-70">{exp.duration}</p>
 
               <ul className="mt-3 space-y-1 text-text-gray text-sm list-disc ml-5">

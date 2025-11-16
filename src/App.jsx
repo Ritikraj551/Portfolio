@@ -34,9 +34,9 @@ function App() {
   return (
     <>
       {/* <Navbar /> */}
-      {/* <Hero /> */}
-      {/* <About /> */}
-      <Projects />
+      <Hero />
+      <About />
+      {/* <Projects /> */}
       {/* <Skills /> */}
       {/* <Experience /> */}
       {/* <Contact /> */}

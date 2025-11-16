@@ -50,7 +50,7 @@ const MobileCarousel = ({
         </button>
       </div>
 
-      <div className="absolute bottom-6 right-0 left-0 pointer-events-none">
+      <div className="absolute bottom-4 right-0 left-0 pointer-events-none">
         <div className="flex items-center justify-center gap-2">
           {cards.map((_, i) => (
             <div

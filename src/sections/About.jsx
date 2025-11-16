@@ -12,6 +12,9 @@ export default function About() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("show");
+          }
+
+          if(entry.target.classList.contains("float-target")){
             setTimeout(() => entry.target.classList.add("floating"), 800);
           }
         });
@@ -31,7 +34,7 @@ export default function About() {
     >
       <div className="flex flex-col-reverse md:flex-row gap-20 justify-between items-center max-w-6xl">
         {/* LEFT — Profile + Circle Text */}
-        <div className="relative reveal" style={{ transitionDelay: "0.3s" }}>
+        <div className="relative reveal float-target" style={{ transitionDelay: "0.3s" }}>
           <div className="absolute inset-0 blur-3xl opacity-30 bg-primary rounded-full -z-10 wind-border "></div>
 
           <img
