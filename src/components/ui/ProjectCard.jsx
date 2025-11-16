@@ -1,6 +1,7 @@
 import React from "react";
 import GlareHover from "../ui/GlareHover";
 import Carousel from "../ui/Carousel";
+import Carouseln from "../ui/Carouseln";
 
 function ProjectCard({
   title,
@@ -14,22 +15,19 @@ function ProjectCard({
 }) {
   return (
     <div
-      className={`flex w-full md:max-w-sm md:mx-auto wind-border rounded-2xl border border-primary-dark md:shadow-glow backdrop-blur-lg hover:scale-[1.03] transition duration-300 p-4 ${className}`}
+      className={`flex w-full md:max-w-sm md:mx-auto wind-border rounded-2xl border border-primary-dark md:shadow-glow backdrop-blur-lg md:hover:scale-[1.03] transition duration-300 p-4 ${className}`}
       style={style}
     >
       <div className="flex w-full flex-col justify-center items-center pb-4">
-        <Carousel
-          autoplay="false"
-          baseWidth="300"
-          autoplayDelay={3000}
-          loop="true"
-          pauseOnHover="true"
-          items={image.map((src) => ({ src }))}
-        />
+        <Carouseln>
+          {image.map((src) => (
+            <img className="mx-auto w-82 h-42" src={src} alt="" />
+          ))}
+        </Carouseln>
         <h3 className="text-primary font-anime text-lg md:text-2xl m-2">
           {title}
         </h3>
-        <p className="text-text-gray text-center font-body text-sm md:text-md max-w-xs md:max-w-xl">
+        <p className="text-text-gray text-center font-body text-sm md:text-md max-w-3xs md:max-w-xl">
           {description}
         </p>
         <div className="flex max-w-2xs md:max-w-xl gap-2 flex-wrap justify-center mt-3 ">
