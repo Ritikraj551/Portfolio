@@ -66,6 +66,16 @@ export default function Experience() {
           </div>
         ))}
       </div>
+      <div className="mt-20 flex justify-center items-center py-10">
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=ritikraj551@gmail.com&su=Hiring%20Inquiry%20from%20Portfolio&body=Hi%20Ritik,%0D%0A%0D%0AI%20am%20interested%20in%20working%20with%20you.%20Here%20are%20the%20details:"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-10 py-4 rounded-full font-semibold uppercase text-primary border border-primary/50 hover:bg-primary/20 hover:scale-105 transition-all duration-300"
+        >
+          Hire Me
+        </a>
+      </div>
     </section>
   );
 }

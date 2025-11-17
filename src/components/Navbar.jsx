@@ -1,14 +1,12 @@
 import { useState } from "react";
 
-const Navbar = () => {
-  const [active, setActive] = useState("");
+const Navbar = ({ active, setActive }) => {
   const [open, setOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-background/40 backdrop-blur-xl border-b border-white/5">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-
           {/* Logo */}
           <a href="#" className="relative">
             <img
@@ -33,8 +31,8 @@ const Navbar = () => {
                     {item}
 
                     {/* underline animation */}
-                    <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-primary group-hover:w-full transition-all duration-300 rounded-full"></span>
-                    <span className="absolute -bottom-[6px] left-0 w-full h-[2px] bg-primary/40 blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500"></span>
+                    <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-primary group-hover:w-full transition-all duration-300 rounded-full"></span>
+                    <span className="absolute -bottom-1.5 left-0 w-full h-0.5 bg-primary/40 blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500"></span>
                   </a>
                 </li>
               )
@@ -44,16 +42,16 @@ const Navbar = () => {
           {/* Mobile menu button */}
           <button
             onClick={() => setOpen(!open)}
-            className="md:hidden flex flex-col gap-[6px]"
+            className="md:hidden flex flex-col gap-1.5"
           >
             <div
-              className={`w-6 h-[2px] bg-primary transition-all duration-300 ${
-                open ? "rotate-45 translate-y-[6px]" : ""
+              className={`w-6 h-0.5 bg-primary transition-all duration-300 ${
+                open ? "rotate-45 translate-y-1.5" : ""
               }`}
             />
             <div
-              className={`w-6 h-[2px] bg-primary transition-all duration-300 ${
-                open ? "-rotate-45 -translate-y-[6px]" : ""
+              className={`w-6 h-0.5 bg-primary transition-all duration-300 ${
+                open ? "-rotate-45 -translate-y-1.5" : ""
               }`}
             />
           </button>
@@ -62,10 +60,10 @@ const Navbar = () => {
         {/* Mobile dropdown */}
         <div
           className={`md:hidden overflow-hidden transition-all duration-500 ${
-            open ? "max-h-65" : "max-h-0"
+            open ? "max-h-75" : "max-h-0"
           }`}
         >
-          <ul className="flex flex-col gap-6 py-2 text-center">
+          <ul className="flex flex-col gap-5 py-2 text-center">
             {["about", "projects", "skills", "experience", "contact"].map(
               (item) => (
                 <li key={item}>

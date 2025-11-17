@@ -200,7 +200,7 @@ a:hover {
 }
 
 /* Timeline*/
-/* ✅ MOBILE (below md) */
+/* MOBILE (below md) */
 @media (max-width: 767px) {
   /* Default layout: stack vertically */
   .timeline-item {
@@ -216,7 +216,7 @@ a:hover {
     left: 8px; /* dot closer to edge */
   }
 
-  /* Override left/right classes so both behave same on mobile */
+  /* left/right classes view for mobile */
   .timeline-item.left,
   .timeline-item.right {
     text-align: left !important;
@@ -348,4 +348,18 @@ a:hover {
 
 .icon-glow:hover {
   filter: drop-shadow(0 0 10px rgba(83, 255, 159, 0.8));
+}
+@layer utilities {
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 5s linear infinite;
+  }
 }

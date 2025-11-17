@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -10,6 +10,8 @@ import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
 
 function App() {
+  const [active, setActive] = useState("");
+
   useEffect(() => {
     const revealElements = document.querySelectorAll(".reveal");
 
@@ -33,14 +35,14 @@ function App() {
 
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar active={active} setActive={setActive} />
       <Hero />
       <About />
-      {/* <Projects /> */}
-      {/* <Skills /> */}
-      {/* <Experience /> */}
-      {/* <Contact /> */}
-      {/* <Footer /> */}
+      <Projects />
+      <Skills />
+      <Experience />
+      <Contact />
+      <Footer setActive={setActive} />
     </>
   );
 }

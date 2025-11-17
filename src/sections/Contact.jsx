@@ -26,13 +26,13 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="relative py-32 px-6 w-full">
+    <section id="contact" className="relative py-20 px-6 w-full">
       {/* background wind aura */}
       <div className="experience-bg"></div>
 
       <div className="max-w-lg xl:max-w-3xl mx-auto relative z-10">
-        <h2 className="text-center text-primary font-anime text-4xl mb-10 reveal">
-          Contact Me
+        <h2 className="flex gap-2 justify-center items-center mb-8 text-primary font-anime font-semibold text-3xl text-shadow-lg text-shadow-primary-dark">
+          <span className="text-primary-light">Contact</span>Me
         </h2>
 
         <p className="text-center text-primary-light font-body mb-14 reveal">

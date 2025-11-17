@@ -44,7 +44,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 25 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.5 }}
-              className="flex gap-4 mt-6"
+              className="flex flex-col md:flex-row gap-4 mt-6"
             >
               {/* Projects Button */}
               <a
@@ -58,7 +58,7 @@ export default function Hero() {
                 </span>
                 <span
                   className="absolute inset-0 bg-primary/15 translate-x-[-120%] group-hover:translate-x-0 
-                                transition-transform duration-500 skew-x-[20deg]"
+                                transition-transform duration-500 skew-x-20"
                 />
               </a>
 
@@ -84,49 +84,43 @@ export default function Hero() {
               initial={{ opacity: 0, y: 25 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8, duration: 0.6 }}
-              className="flex items-center gap-4 mt-12"
+              className="flex justify-center md:justify-start items-center gap-4 mt-12"
             >
-              <p className="font-body text-text-gray tracking-widest">
-                Let’s Connect
-              </p>
-
-              <div className="flex gap-3">
-                {/* GitHub Orb */}
-                <a
-                  href="https://github.com/Ritikraj551"
-                  target="_blank"
-                  className="group relative w-11 h-11 flex items-center justify-center rounded-full 
+              {/* GitHub Orb */}
+              <a
+                href="https://github.com/Ritikraj551"
+                target="_blank"
+                className="group relative w-11 h-11 flex items-center justify-center rounded-full 
                             border border-primary bg-surface/40 backdrop-blur-md overflow-hidden
                             hover:scale-[1.12] transition-all duration-300"
-                >
-                  <span
-                    className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 
+              >
+                <span
+                  className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 
                                    blur-md transition duration-300"
-                  />
-                  <FaGithub
-                    className="text-primary group-hover:scale-110 transition"
-                    size={20}
-                  />
-                </a>
+                />
+                <FaGithub
+                  className="text-primary group-hover:scale-110 transition"
+                  size={25}
+                />
+              </a>
 
-                {/* LinkedIn Orb */}
-                <a
-                  href="https://www.linkedin.com/in/ritik-raj-singh-92b018301/"
-                  target="_blank"
-                  className="group relative w-11 h-11 flex items-center justify-center rounded-full 
+              {/* LinkedIn Orb */}
+              <a
+                href="https://www.linkedin.com/in/ritik-raj-singh-92b018301/"
+                target="_blank"
+                className="group relative w-11 h-11 flex items-center justify-center rounded-full 
                             border border-primary bg-surface/40 backdrop-blur-md overflow-hidden
                             hover:scale-[1.12] transition-all duration-300"
-                >
-                  <span
-                    className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 
+              >
+                <span
+                  className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 
                                    blur-md transition duration-300"
-                  />
-                  <FaLinkedin
-                    className="text-primary group-hover:scale-110 transition"
-                    size={20}
-                  />
-                </a>
-              </div>
+                />
+                <FaLinkedin
+                  className="text-primary group-hover:scale-110 transition"
+                  size={25}
+                />
+              </a>
             </motion.div>
           </div>
 

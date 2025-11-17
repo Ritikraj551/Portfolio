@@ -63,7 +63,7 @@ export default function About() {
             Who am I?
           </p>
 
-          <h2 className="text-5xl font-anime text-primary">About Me</h2>
+          <h2 className="text-5xl font-anime text-primary"><span className="text-primary-light">About</span> Me</h2>
 
           <p className="font-body text-lg leading-relaxed text-text-gray">
             I'm a front-end developer who builds fast and interactive web
