@@ -14,7 +14,7 @@ export default function About() {
             entry.target.classList.add("show");
           }
 
-          if(entry.target.classList.contains("float-target")){
+          if (entry.target.classList.contains("float-target")) {
             setTimeout(() => entry.target.classList.add("floating"), 800);
           }
         });
@@ -34,13 +34,16 @@ export default function About() {
     >
       <div className="flex flex-col-reverse md:flex-row gap-20 justify-between items-center max-w-6xl">
         {/* LEFT — Profile + Circle Text */}
-        <div className="relative reveal float-target" style={{ transitionDelay: "0.3s" }}>
+        <div
+          className="relative reveal float-target"
+          style={{ transitionDelay: "0.3s" }}
+        >
           <div className="absolute inset-0 blur-3xl opacity-30 bg-primary rounded-full -z-10 wind-border "></div>
 
           <img
-            src="/profile.png"
+            src="/aboutProf.png"
             alt="profile"
-            className="w-[110px] md:w-[340px] aura-glow rounded-xl"
+            className="w-[110px] md:w-[340px] rounded-xl"
           />
 
           <div
@@ -63,7 +66,9 @@ export default function About() {
             Who am I?
           </p>
 
-          <h2 className="text-5xl font-anime text-primary"><span className="text-primary-light">About</span> Me</h2>
+          <h2 className="text-5xl font-anime text-primary">
+            <span className="text-primary-light">About</span> Me
+          </h2>
 
           <p className="font-body text-lg leading-relaxed text-text-gray">
             I'm a front-end developer who builds fast and interactive web

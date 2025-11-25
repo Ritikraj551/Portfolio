@@ -30,19 +30,6 @@
   },
   {
     "id": 3,
-    "title": "Currency Converter",
-    "description": "Vanilla JS currency converter UI that fetches exchange rates and displays conversions.",
-    "tech": ["HTML", "CSS", "JavaScript", "REST API"],
-    "github": "https://github.com/Ritikraj551/currency-converter",
-    "demo": "",
-    "image": [
-      "/assets/images/currency_con/currency1.png",
-      "/assets/images/currency_con/currency2.png",
-      "/assets/images/currency_con/currency3.png"
-    ]
-  },
-  {
-    "id": 4,
     "title": "Herbarium (Triyagyoni)",
     "description": "Plant e-commerce / catalog site with 3D model-viewer support and product pages.",
     "tech": ["HTML", "CSS", "JavaScript", "model-viewer (3D)"],
@@ -61,7 +48,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 4,
     "title": "Bookmark Website",
     "description": "A Tailwind-based bookmark manager landing site with features and download CTAs.",
     "tech": ["HTML", "TailwindCSS", "JavaScript"],
@@ -76,7 +63,7 @@
     ]
   },
   {
-    "id": 6,
+    "id": 5,
     "title": "Clipboard",
     "description": "A landing site describing a clipboard/snippets app (Tailwind + HTML/CSS).",
     "tech": ["HTML", "TailwindCSS", "JavaScript"],
@@ -91,7 +78,7 @@
     ]
   },
   {
-    "id": 7,
+    "id": 6,
     "title": "SkySync",
     "description": "File-sync landing page with dark/light theme, features, and testimonials.",
     "tech": ["HTML", "TailwindCSS", "JavaScript"],
@@ -107,16 +94,7 @@
     ]
   },
   {
-    "id": 8,
-    "title": "Testimonial Grid",
-    "description": "Responsive testimonial grid layout example built with HTML/CSS.",
-    "tech": ["HTML", "CSS"],
-    "github": "https://github.com/Ritikraj551/testimonial-grid",
-    "demo": "",
-    "image": ["/assets/images/testimonial/testimonial.png"]
-  },
-  {
-    "id": 9,
+    "id": 7,
     "title": "Trimzy",
     "description": "Link-shortening / marketing landing page built with modern CSS and JS.",
     "tech": ["HTML", "CSS", "JavaScript"],
@@ -130,7 +108,7 @@
     ]
   },
   {
-    "id": 10,
+    "id": 8,
     "title": "VirtuNest",
     "description": "Virtual/VR agency landing site showcasing creations and interactive imagery.",
     "tech": ["HTML", "CSS", "JavaScript"],
@@ -144,7 +122,7 @@
     ]
   },
   {
-    "id": 11,
+    "id": 9,
     "title": "Password Generator",
     "description": "React + Vite password generator app (TailwindCSS used in the project template).",
     "tech": ["React", "Vite", "TailwindCSS"],
@@ -153,7 +131,7 @@
     "image": ["/assets/images/passgen/passgen.png"]
   },
   {
-    "id": 12,
+    "id": 10,
     "title": "Rock Paper Scissors",
     "description": "Classic Rock-Paper-Scissors mini-game implemented with vanilla JS.",
     "tech": ["HTML", "CSS", "JavaScript"],
@@ -167,7 +145,7 @@
     ]
   },
   {
-    "id": 13,
+    "id": 11,
     "title": "Tic-Tac-Toe",
     "description": "A small browser-based Tic-Tac-Toe mini-game using plain HTML/CSS/JS.",
     "tech": ["HTML", "CSS", "JavaScript"],
@@ -176,20 +154,6 @@
     "image": [
       "/assets/images/tictactoe/tictactoe1.png",
       "/assets/images/tictactoe/tictactoe2.png"
-    ]
-  },
-  {
-    "id": 14,
-    "title": "To-Do List",
-    "description": "React + Vite To-Do app using TailwindCSS (simple task manager demo).",
-    "tech": ["React", "Vite", "TailwindCSS"],
-    "github": "https://github.com/Ritikraj551/to-do-list",
-    "demo": "",
-    "image": [
-      "/assets/images/todo/todo1.png",
-      "/assets/images/todo/todo2.png",
-      "/assets/images/todo/todo3.png",
-      "/assets/images/todo/todo4.png"
     ]
   }
 ]

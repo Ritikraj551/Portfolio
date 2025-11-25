@@ -10,7 +10,7 @@ const Footer = ({ active, setActive }) => {
             Ritik's Portfolio
           </h3>
 
-          <ul className="flex flex-col md:flex-row gap-8 text-white/80">
+          <ul className="flex flex-col md:flex-row gap-8 font-anime">
             {["about", "projects", "skills", "experience", "contact"].map(
               (item) => (
                 <li key={item}>

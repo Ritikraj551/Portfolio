@@ -4,7 +4,7 @@ const Navbar = ({ active, setActive }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-background/40 backdrop-blur-xl border-b border-white/5">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-background/20 backdrop-blur-xl border-b border-white/5">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -17,15 +17,15 @@ const Navbar = ({ active, setActive }) => {
           </a>
 
           {/* Desktop nav */}
-          <ul className="hidden md:flex items-center gap-8">
+          <ul className="hidden md:flex items-center gap-8 font-anime">
             {["about", "projects", "skills", "experience", "contact"].map(
               (item) => (
                 <li key={item}>
                   <a
                     href={`#${item}`}
                     onClick={() => setActive(item)}
-                    className={`relative uppercase tracking-wide transition-all duration-300 ${
-                      active === item ? "text-primary" : "text-white/80"
+                    className={`relative uppercase hover:text-primary tracking-wide transition-all duration-300 ${
+                      active === item ? "text-primary" : "text-primary-light/80"
                     } group`}
                   >
                     {item}
